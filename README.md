@@ -2,7 +2,7 @@
 
 ### Framework:  
 
-<img src="fig/faha.png" width="600"/>
+<img src="fig/faha.png" width="800"/>
 
 ### Prerequisites:
 - python == 3.6.8
