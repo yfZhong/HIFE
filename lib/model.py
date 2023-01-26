@@ -372,7 +372,7 @@ class Cosine_feature_merge_with_skip_connection(nn.Module):
             # dist = (1 - simi) / 2.0
             dist = (1 - simi**2)
             dist = torch.mean(dist)
-            dist_value += dist   # similarity: 相同时为1，正交时为0，相反时为-1
+            dist_value += dist
             if f1_id == f2_id:
                 out = input[f1_id]
             else:

@@ -1,6 +1,4 @@
 """Dataset setting and data loader for USPS.
-Modified from
-https://github.com/mingyuliutw/CoGAN/blob/master/cogan_pytorch/src/dataset_usps.py
 """
 
 import gzip

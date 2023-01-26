@@ -80,7 +80,6 @@ def finetune_models():
         Y_t = Y_t.to(device)
 
 
-        ##Yvo 5.add weight_decay
         wd=0.001
         # if source_dataset_name == 'cifar' or source_dataset_name == 'stl':
         #     optimizer = torch.optim.SGD([{'params': list(encoder.parameters()),
