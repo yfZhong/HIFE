@@ -218,9 +218,9 @@ def train_feature_merge_teacher_model(model_epoch=1000):
     global encoders, target_encoder, target_classifier, Cosine_feature_merge_with_skip_connection_net
 
     encoders_params = list()
-    # for i in range(len(encoders)):
-    #     encoders_params += list(encoders[i].parameters())
-    encoders_params += list(encoders[len(encoders)-1].parameters())
+    for i in range(len(encoders)):
+         encoders_params += list(encoders[i].parameters())
+    #encoders_params += list(encoders[len(encoders)-1].parameters())
     target_classifier_params = list(target_classifier.parameters())
 
     wd1, wd2, nv, mt = 0.1, 0.1, True, 0.9
@@ -401,7 +401,8 @@ if __name__ == '__main__':
     train_feature_merge_teacher_model(model_epoch=opt['t_epoch'])
 
 
-    if opt['DA_type'] == 'CDA':
-        target_encoder.load_state_dict(integration(encoders, model_weights=model_weights))
+    # for Knowledge distillation
+    #if opt['DA_type'] == 'CDA':
+    #    target_encoder.load_state_dict(integration(encoders, model_weights=model_weights))
 
-    train_target_encoder(model_epoch=int(opt['s_epoch']))
+    #train_target_encoder(model_epoch=int(opt['s_epoch']))

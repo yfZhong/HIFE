@@ -1,8 +1,8 @@
-# Official implementation for 'Few-shot Hypotheses Adaptation with Weak Source Models'
+# Official implementation for 'A First Look At Few-shot Hypotheses Adaptation with Weak Source Models'
 
 ### Framework:  
 
-<img src="fig/faha.png" width="800"/>
+<img src="fig/framework.png" width="800"/>
 
 ### Prerequisites:
 - python == 3.6.8
