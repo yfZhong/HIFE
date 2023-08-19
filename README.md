@@ -2,7 +2,7 @@
 
 ### Framework:  
 
-<img src="fig/framework.pdf" width="800"/>
+<img src="fig/framework.png" width="800"/>
 
 ### Prerequisites:
 - python == 3.6.8
