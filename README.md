@@ -1,4 +1,4 @@
-# Official implementation for 'Few-Shot Hypotheses Adaptation with Weak Source Models: An Initial Study'
+# Official implementation for '[TMLR 2024] HiFE: Hierarchical Feature Ensemble Framework for Few-Shot Hypotheses Adaptation'
 
 ### Framework:  
 
@@ -14,7 +14,7 @@
 
 - Concerning the **Digits** dsatasets, the code will automatically download three digit datasets (i.e., MNIST, USPS, and SVHN) in './data/'.
 
-- Please manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view) from the official websites, and modify the path of images in each '.txt' under the folder './data/office'.
+- Please manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [VisDA-C](https://github.com/VisionLearningGroup/taskcv-2017-public/tree/master/classification) from the official websites, and modify the path of images in each '.txt' under the folder './data/office'.
 
 
 ### Training:
@@ -53,4 +53,5 @@
     	--resize_size 256 \
     	--DA_type PDA
     	```
+**Please refer *./scripts/run_pretrain.sh*** for the script for generating sources in different source accuracies. Refer *./scripts/run_main.sh*** for all settings for different scenarios.
 
